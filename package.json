@@ -1,11 +1,24 @@
 {
   "name": "nerdjs-config",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.3",
+  "description": "Configure and install elements for use framework Nerdjs",
   "main": "index.js",
+  "keywords": [
+    "javascript",
+    "config",
+    "nerdjs"
+  ],
+  "tags": [
+    "nerd",
+    "js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciock/nerdjs-config"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

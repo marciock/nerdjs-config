@@ -7,15 +7,14 @@ export class Creator extends HTMLElement{
     
     constructor(){
      super();
-      
-      
 
   }
     render(){}
      callBack(){}
      connectedCallback(){
-
+        
         this.state=window.state;
+       
         this.innerHTML=this.render();
         this.callBack();
         
@@ -39,13 +38,27 @@ export class Creator extends HTMLElement{
         let child=el.querySelector('#'+id);
 
         return child;
-
     }
-    
-
-
-
-
-          
+   
 }   //end class
 
+export class Generator extends HTMLElement{
+
+
+   
+    create(){}
+
+    getProps(prop){
+        let myProp=this.getAttribute(prop);
+        return myProp;
+	}
+    setState(state,value){
+        window.state[state]=value;
+        return window.state;
+    }
+    connectedCallback(){
+        this.state=window.state;
+        this.create();
+    }
+
+}
